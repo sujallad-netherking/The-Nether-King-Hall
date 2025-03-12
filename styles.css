@@ -1,0 +1,76 @@
+body {
+    background-size: cover;
+    background-position: center;
+    color: #ff4500; /* Nether-inspired fiery color */
+    font-family: 'Minecraftia', Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-blend-mode: multiply;
+}
+
+.container {
+    background: linear-gradient(135deg, rgba(20, 0, 0, 0.95), rgba(50, 0, 0, 0.85)); /* Dark reddish-black Nether glow */
+    padding: 30px;
+    border-radius: 15px;
+    border: 3px solid #8b0000; /* Dark red outline */
+    box-shadow: 0 0 25px #ff4500, 0 0 50px #8b0000; /* Fiery glow effect */
+    max-width: 80%;
+}
+
+h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 15px #ff6347, 0 0 30px #ff4500;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px #ff4500;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ff6347;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+    text-shadow: 0 0 15px #ffd700;
+}
+
+button {
+    background: #8b0000;
+    border: 2px solid #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #ff4500;
+    border-color: #ffd700;
+    box-shadow: 0 0 15px #ffd700;
+}

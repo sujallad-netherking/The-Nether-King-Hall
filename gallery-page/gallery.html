@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    
+    <h2>Image Gallery</h2>
+
+    <!-- Otm Section -->
+    <details>
+      <summary>Otm</summary>
+      <div class="gallery-images">
+        <script>
+          for (let i = 1; i <= 191; i++) {
+            document.write(`<img src="gallery/Otm/${i}.jpg" alt="Otm Image ${i}">`);
+          }
+        </script>
+      </div>
+    </details>
+
+    <!-- Cleave Section -->
+    <details>
+      <summary>Cleave</summary>
+      <div class="gallery-images">
+        <script>
+          for (let i = 1; i <= 90; i++) {
+            document.write(`<img src="gallery/Cleave/${i}.jpg" alt="Cleave Image ${i}">`);
+          }
+        </script>
+      </div>
+    </details>
+
+    <!-- Tape Section -->
+    <details>
+      <summary>Tape</summary>
+      <div class="gallery-images">
+        <script>
+          for (let i = 1; i <= 4; i++) {
+            document.write(`<img src="gallery/Tape/${i}.jpg" alt="Tape Image ${i}">`);
+          }
+        </script>
+      </div>
+    </details>
+
+    <!-- Other Section -->
+    <details>
+      <summary>Other</summary>
+      <div class="gallery-images">
+        <script>
+          for (let i = 1; i <= 13; i++) {
+            document.write(`<img src="gallery/Other/${i}.jpg" alt="Other Image ${i}">`);
+          }
+        </script>
+      </div>
+    </details>
+
+  </div>
+
+  <!-- Modal Popup -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
